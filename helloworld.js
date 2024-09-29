@@ -8,7 +8,8 @@ http.createServer(function (request, response) {
    response.writeHead(200, {'Content-Type': 'text/html'})
 
    // Send the response body as "Hello World"
-   response.end('<html><head><title>Company Portal</title></head><body><h1>The Company Portal</h1><h2>Greetings to all Customers</h2></body></html>\n')
+   response.write('<html><head><title>Company Portal</title></head>')
+   response.end('<body><h1>The Company Portal</h1><h2>Greetings to all Customers</h2></body></html>\n')
 }).listen(3333)
 
 // Console will print the message
