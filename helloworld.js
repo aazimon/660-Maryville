@@ -9,7 +9,9 @@ http.createServer(function (request, response) {
 
    // Send the response body as "Hello World"
    response.write('<html><head><title>Company Portal</title></head>')
-   response.write('<body><h1>The Company Portal</h1><h2>Greetings to all Customers</h2>')
+   response.write('<body>')
+   response.write('<h1>The Company Portal</h1><h2>Greetings to all Customers</h2>')
+   response.write('<p>This is are message to everyone that is able to view this page. Welcome to the Company Portal')
    response.end('</body></html>\n')
 }).listen(3333)
 
