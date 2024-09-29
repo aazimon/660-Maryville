@@ -11,7 +11,7 @@ http.createServer(function (request, response) {
    response.write('<html><head><title>Company Portal</title></head>')
    response.write('<body>')
    response.write('<h1>The Company Portal</h1><h2>Greetings to all Customers</h2>')
-   response.write('<p>This is are message to everyone that is able to view this page. Welcome to the Company Portal')
+   response.write('<p>This is are message to everyone that is able to view this page. Welcome to the Company Portal</p>')
    response.end('</body></html>\n')
 }).listen(3333)
 
